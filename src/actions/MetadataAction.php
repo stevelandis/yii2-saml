@@ -1,6 +1,6 @@
 <?php
 
-namespace asasmoyo\yii2saml\actions;
+namespace asminog\yii2saml\actions;
 
 use Yii;
 use yii\web\Response;

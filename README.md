@@ -1,7 +1,7 @@
 Yii 2 Saml
 ==========
 
-[![Build Status](https://travis-ci.org/asasmoyo/yii2-saml.svg?branch=master)](https://travis-ci.org/asasmoyo/yii2-saml)
+[![Build Status](https://travis-ci.org/asminog/yii2-saml.svg?branch=master)](https://travis-ci.org/asminog/yii2-saml)
 
 Connect Yii 2 application to a Saml Identity Provider for Single Sign On
 
@@ -13,13 +13,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist asasmoyo/yii2-saml "*"
+php composer.phar require --prefer-dist asminog/yii2-saml "*"
 ```
 
 or add
 
 ```
-"asasmoyo/yii2-saml": "*"
+"asminog/yii2-saml": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -27,12 +27,12 @@ to the require section of your `composer.json` file.
 Configuration
 -------------
 
-Register ``asasmoyo\yii2saml\Saml`` to your components in ``config/web.php``.
+Register ``asminog\yii2saml\Saml`` to your components in ``config/web.php``.
 
 ```php
 'components' => [
     'saml' => [
-        'class' => 'asasmoyo\yii2saml\Saml',
+        'class' => 'asminog\yii2saml\Saml',
         'configFileName' => '@app/config/saml.php', // OneLogin_Saml config file (Optional)
     ]
 ]
@@ -97,7 +97,7 @@ This extension provides 4 actions:
         public function actions() {
             return [
                 'login' => [
-                    'class' => 'asasmoyo\yii2saml\actions\LoginAction'
+                    'class' => 'asminog\yii2saml\actions\LoginAction'
                 ]
             ];
         }
@@ -130,7 +130,7 @@ This extension provides 4 actions:
             return [
                 ...
                 'acs' => [
-                    'class' => 'asasmoyo\yii2saml\actions\AcsAction',
+                    'class' => 'asminog\yii2saml\actions\AcsAction',
                     'successCallback' => [$this, 'callback'],
                     'successUrl' => Url::to('site/welcome'),
                 ]
@@ -159,7 +159,7 @@ This extension provides 4 actions:
             return [
                 ...
                 'metadata' => [
-                    'class' => 'asasmoyo\yii2saml\actions\MetadataAction'
+                    'class' => 'asminog\yii2saml\actions\MetadataAction'
                 ]
             ];
         }
@@ -176,7 +176,7 @@ This extension provides 4 actions:
             return [
                 ...
                 'logout' => [
-                    'class' => 'asasmoyo\yii2saml\actions\LogoutAction',
+                    'class' => 'asminog\yii2saml\actions\LogoutAction',
                     'returnTo' => Url::to('site/bye'),
                 ]
             ];
@@ -196,7 +196,7 @@ This extension provides 4 actions:
             return [
                 ...
                 'sls' => [
-                    'class' => 'asasmoyo\yii2saml\actions\SlsAction',
+                    'class' => 'asminog\yii2saml\actions\SlsAction',
                     'successUrl' => Url::to('site/bye'),
                 ]
             ]

@@ -1,6 +1,6 @@
 <?php
 
-namespace asasmoyo\yii2saml;
+namespace asminog\yii2saml;
 
 use Yii;
 use yii\base\Object;

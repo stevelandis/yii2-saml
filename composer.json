@@ -1,5 +1,5 @@
 {
-    "name": "asasmoyo/yii2-saml",
+    "name": "asminog/yii2-saml",
     "description": "Connect Yii 2 application to a Saml Identity Provider for Single Sign On",
     "type": "yii2-extension",
     "keywords": [
@@ -19,19 +19,19 @@
     "prefer-stable": true,
     "require": {
         "yiisoft/yii2": "*",
-        "onelogin/php-saml": ">=2.10.0"
+        "onelogin/php-saml": "~2.10"
     },
     "require-dev": {
         "phpunit/phpunit": "5.1.*"
     },
     "autoload": {
         "psr-4": {
-            "asasmoyo\\yii2saml\\": "src/"
+            "asminog\\yii2saml\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "asasmoyo\\yii2saml\\tests\\": "tests/"
+            "asminog\\yii2saml\\tests\\": "tests/"
         }
     }
 }

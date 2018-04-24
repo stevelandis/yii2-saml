@@ -1,8 +1,8 @@
 <?php
 
-namespace asasmoyo\yii2saml\tests;
+namespace asminog\yii2saml\tests;
 
-use asasmoyo\yii2saml\Saml;
+use asminog\yii2saml\Saml;
 
 class SamlTest extends \PHPUnit_Framework_TestCase
 {
