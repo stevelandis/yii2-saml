@@ -16,7 +16,7 @@ class LoginAction extends BaseAction
      */
     public function run()
     {
-        $this->samlInstance->login();
+        $this->samlInstance->login((!empty(Yii::$app->user->returnUrl) ? Yii::$app->user->returnUrl : Yii::$app->homeUrl));
     }
 
 }
