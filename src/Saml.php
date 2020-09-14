@@ -9,7 +9,7 @@ use OneLogin\Saml2\Settings;
 use yii\base\BaseObject;
 
 /**
- * This class wraps OneLogin_Saml2_Auth class by creating an instance of that class using configurations specified in configFileName variable inside @app/config folder.
+ * SL This class wraps OneLogin_Saml2_Auth class by creating an instance of that class using configurations specified in configFileName variable inside @app/config folder.
  */
 class Saml extends BaseObject
 {
