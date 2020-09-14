@@ -40,6 +40,11 @@ class Saml extends BaseObject
             $configFile = Yii::getAlias($this->configFileName);
             $this->config = require($configFile);
         }
+        
+        echo "<pre>";
+        print_r($this->config);
+        print_r($_SERVER);
+        exit;
 
         $this->instance = new Auth($this->config);
     }
